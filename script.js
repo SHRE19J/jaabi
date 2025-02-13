@@ -16,7 +16,7 @@ function createHeart() {
         heart.remove();
 
         // Display love message when score reaches 15
-        if (score >= 15) {
+        if (score >= 10) {
             loveMessage.style.display = "block";
             loveMessage.innerText = "💌 ജാബി എന്റെ ഹൃദയം കീഴടക്കി ! 💖"; 
         }
