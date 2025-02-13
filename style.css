@@ -1,0 +1,52 @@
+body {
+    background: linear-gradient(to bottom, #ff758c, #ff7eb3);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+.heart {
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#score {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#love-message {
+    font-size: 24px;
+    font-weight: bold;
+    display: none;
+    margin-top: 20px;
+    color: #ffeedd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+    animation: fadein 2s ease-in-out;
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
