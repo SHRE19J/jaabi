@@ -15,7 +15,7 @@ function createHeart() {
         scoreDisplay.textContent = "Score: " + score;
         heart.remove();
 
-        // Display love message when score reaches 15
+        // Display love message when score reaches 10
         if (score >= 10) {
             loveMessage.style.display = "block";
             loveMessage.innerText = "💌 ജാബി എന്റെ ഹൃദയം കീഴടക്കി ! 💖"; 
@@ -24,7 +24,6 @@ function createHeart() {
 
     gameContainer.appendChild(heart);
 
-    let fallSpeed = 3000; // Falling time in milliseconds
     let fallInterval = setInterval(() => {
         let currentTop = parseInt(heart.style.top || 0);
         if (currentTop < window.innerHeight - 50) {
